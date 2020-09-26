@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
     !message.member.roles.cache.some(r =>
       [
         "659796341274443787",
-        ""
+        "659831550179016705"
       ].includes(r.id) )) {
     return message.channel.send(`${message.author.username} esse comando é restrito.`);
   } else if (message.content.includes("on")) {
