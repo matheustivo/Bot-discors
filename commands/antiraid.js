@@ -1,12 +1,11 @@
 exports.run = async (client, message, args) => {
-  const roleA = await message.guild.roles.cache.find(role => role.id === "602006032931225620"); 
+  const roleA = await message.guild.roles.cache.find(role => role.id === "660582476795740180"); 
 
   if (
     !message.member.roles.cache.some(r =>
       [
-        "622643030230564875",
-        "602572679475757056",
-        "602616263218561024"
+        "659796341274443787",
+        ""
       ].includes(r.id) )) {
     return message.channel.send(`${message.author.username} esse comando é restrito.`);
   } else if (message.content.includes("on")) {
