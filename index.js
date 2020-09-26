@@ -15,8 +15,8 @@ const config = require("./config.json"); //Pegando o prefixo do bot para respost
 client.on("message", async message =>{
 if(message.author.bot) return;
 if(message.channel.type === "dm") return;
-if(message.content.startsWitch(config.prefix)) return;
-if(message.content.startsWith(`<@!${client.user.id)`) || message.content.startsWith(`<@${client.user.id`)) return;
+if(!message.content.startsWith(config.prefix)) return;
+if(message.content.startsWith(`<@!${client.user.id)`) || message.content.startsWith(`<@${client.user.id)) return;
 
 
 })
