@@ -20,8 +20,7 @@ if (!args[0]) {
   );
   await message.channel.send(`${message.author} a mensagem foi enviada com sucesso!`);
 
-  const emojis = ["✔️", ""];
-
+  const emojis = ["✅", "❎"];
   for (const i in emojis) {
     await msg.react(emojis[i])
   }
