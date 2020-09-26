@@ -20,7 +20,7 @@ if (!args[0]) {
   );
   await message.channel.send(`${message.author} a mensagem foi enviada com sucesso!`);
 
-  const emojis = ["https://cdn.glitch.com/c9774cdd-15e1-4938-8fde-4aeedbb8b529%2F5845_tickgreen.gif?v=1601132470229", ""];
+  const emojis = ["✔️", ""];
 
   for (const i in emojis) {
     await msg.react(emojis[i])
